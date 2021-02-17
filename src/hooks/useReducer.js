@@ -17,9 +17,9 @@ export function reducer(state, action) {
         case 'undo':
             return {
                 ...state,
-                undo: [state.undo.slice(0, -1)],
+                undo: state.undo.slice(0, -1),
                 redo: [state.current, ...state.redo],
-                current: state.undo[state.undo.length - 1] || ['#FFF00']
+                current: state.undo[state.undo.length - 1]
             };
         case 'redo':
             return {

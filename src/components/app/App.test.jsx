@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import reducer, { initialState } from '../../hooks/useReducer';
 import App from './App';
 
 describe('App component', () => {
